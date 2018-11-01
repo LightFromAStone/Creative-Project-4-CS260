@@ -15,8 +15,17 @@
 
   <body>
     <div class="container-fluid" id="main-container">
-        <div class="jumbotron jumbotron-fluid text-center">
+      <div id="header-block"></div>
+        <div class="jumbotron jumbotron-fluid text-center fixed-top">
             <h1>CS260 Chat</h1>
+        <nav class="navbar justify-content-center" id="username-nav">
+          <form class="form-inline" id="change_username">
+        <input class="form-control" id="username" type="text" placeholder="Anonymous" />
+        <button class="btn btn-primary" id="send_username" type="submit">Change username</button>
+        <button class="btn btn-primary" id="load_history" type="button">Begin Chat</button>
+          </form>
+        </nav>
+              <section id="feedback"></section>
         </div>
 
 
@@ -24,21 +33,16 @@
 
 
         <div class="container" id="chatroom-container">
-            <section>
-              <div id="change_username">
-            <input id="username" type="text" />
-            <button id="send_username" type="button">Change username</button>
-              </div>
-            </section>
         
             <section id="chatroom">
-              <section id="feedback"></section>
             </section>
             
-            <button id="load_history" type="button">Load History</button>
+        </div>
         
+            <!-- This div is used to prevent messages being eclipsed by the fixed-bottom form -->
+            <div id="footer-block"></div>
             
-            <div class="fixed-bottom">
+            <div class="fixed-bottom" id="form-container" hidden="true">
                 <form id="input_zone">
                     <div class="form-group">
                         <label for="email">Message:</label>
@@ -47,8 +51,6 @@
                     <button type="submit" id="send_message" class="btn btn-primary">Send</button>
                 </form>
             </div>
-
-        </div>
 
     </div>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>

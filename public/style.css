@@ -1,17 +1,65 @@
+body {
+    background: #263238;
+}
+
 #main-container {
     padding: 0;
 }
 
+h1 {
+    margin: 0.5rem;
+    color: white;
+}
+
+#header-block {
+    height: 9rem;
+}
+
 .jumbotron {
-    background-color: aqua;
+    height: 6.5rem;
+    background-color: #263238;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#feedback {
+    color: white;
+}
+
+.btn.btn-primary {
+    background-color: #E91E63;
+    margin-left: 0.5rem;
+    border: 0;
+}
+
+.btn.btn-primary:focus {
+    outline: 0 none;
+}
+
+.btn.btn-primary:active {
+    outline: 0 none;
+}
+
+#username-nav {
+    background-color: #455A64;
+    margin-top: 0;
 }
 
 #chatroom-container {
-    background-color: gray;
+    padding: 0;
+}
+
+#footer-block {
+    height: 10rem;
+}
+#form-container {
+    background-color: #455A64;
+    height: 10rem;
 }
 
 #input_zone {
-    margin: 2rem;
+    margin: 1rem;
 }
 
 #send_message {
@@ -19,10 +67,16 @@
     margin-bottom: 1rem;
 }
 
+.message {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 3rem;
+}
+
 .message:nth-child(even) {
-    background-color: #81DAF5;
+    background-color: #01579B;
 }
 
 .message:nth-child(odd) {
-    background-color: #81BEF7;
+    background-color: #E91E63; 
 }

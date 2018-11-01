@@ -42,12 +42,6 @@ io.on('connection', (socket) => {
         //broadcast the new message
         io.sockets.emit('new_message', {message : data.message, username : socket.username});
         history.push({username : socket.username, message : data.message});
-        console.log(socket.username);
-        console.log(data.message);
-        console.log(history.length);
-        for (var i = 0; i < history.length; ++i){
-            console.log('Username: ' + history[i].username + '-- Message: ' + history[i].message);
-        }
     });
 
     //listen on typing
