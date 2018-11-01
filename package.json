@@ -1,0 +1,26 @@
+{
+  "name": "creative-project-4-cs260",
+  "version": "1.0.0",
+  "description": "a simple chat app for my web development class",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LightFromAStone/Creative-Project-4-CS260.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LightFromAStone/Creative-Project-4-CS260/issues"
+  },
+  "homepage": "https://github.com/LightFromAStone/Creative-Project-4-CS260#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.5",
+    "socket.io": "^2.1.1"
+  }
+}
